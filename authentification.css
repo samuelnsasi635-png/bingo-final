@@ -166,7 +166,7 @@ header .logo-lien {
 
 .auth-image {
 
-    background: url(photo/villa.jpg);
+    background: url("photo/villa.jpg");
 
     background-size: cover;
 
