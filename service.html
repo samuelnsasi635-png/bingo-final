@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bingo - immobilier</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="shortcut icon" href="/photo/Bingo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="logo-lien">
+                <a href="index.html" class="logo">Bingo</a>
+                <div class="menu-lien">
+                    <a href="index.html">accueil</a>
+                    <a href="service.html">services</a>
+                    <a href="contact.html">contact</a>
+                    <a href="apropos.html">a propos</a>
+                </div>
+            </div>
+            <div class="btn-lien">
+                <a href="authentification.html">connexion</a>
+                <a href="authentification.html" class="orange-lien">inscription</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <!-- fin du menu -->
+        <div class="deuxSection">
+            <section class="depot-annonce">
+
+                <h2>Déposez votre annonce</h2>
+
+                <p>
+
+                    Déposez votre annonce en quelques clics.
+                </p>
+
+                <button id="ouvrirModal" class="btn1">
+                    Déposer une annonce
+                </button>
+
+            </section>
+        </div>
+
+
+
+        <section class="properties-section">
+            <h2>Propriétés Disponibles</h2>
+
+            <!-- BOUTONS DE FILTRE -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProperties('all')">Tous</button>
+                <button class="filter-btn" onclick="filterProperties('appartement')">Appartements</button>
+                <button class="filter-btn" onclick="filterProperties('maison')">Maisons</button>
+                <button class="filter-btn" onclick="filterProperties('villa')">Villas</button>
+                <button class="filter-btn" onclick="filterProperties('bureau')">Bureaux</button>
+            </div>
+
+            <!-- GRILLE DES PROPRIÉTÉS -->
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- Les propriétés seront générées par JavaScript -->
+            </div>
+        </section>
+        <div class="modal" id="modalAnnonce">
+
+            <div class="modal-content">
+
+                <span class="close">&times;</span>
+
+                <h2>Déposer une annonce</h2>
+
+                <form id="annonceForm">
+
+                    <label>Nom complet</label>
+                    <input type="text" id="nom">
+
+                    <label>Téléphone</label>
+                    <input type="tel" id="telephone">
+
+                    <label>Email</label>
+                    <input type="email" id="email">
+
+                    <label>Type de bien</label>
+                    <select id="type">
+                        <option>Appartement</option>
+                        <option>Maison</option>
+                        <option>Villa</option>
+                        <option>Bureau</option>
+                        <option>Terrain</option>
+                    </select>
+
+                    <label>Statut</label>
+                    <select id="statut">
+                        <option>À vendre</option>
+                        <option>À louer</option>
+                    </select>
+
+                    <label>Commune</label>
+                    <input type="text" id="commune">
+
+                    <label>Prix ($)</label>
+                    <input type="number" id="prix">
+
+                    <label>Description</label>
+                    <textarea id="description"></textarea>
+
+                    <label>Photos</label>
+                    <input type="file" id="images" multiple accept="image/*">
+
+                    <div id="preview"></div>
+                    <div id="message"></div>
+
+                    <button type="submit" class="btn1">
+                        Publier l'annonce
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+        <div class="modal" id="detailsModal">
+
+            <div class="modal-content">
+
+                <span class="close" id="closeDetails"> <img src="photo/close.svg" alt="icon de fermeture">
+                </span>
+
+                <div id="detailsContent"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="cont">
+
+            <div class="foot-logo">
+                <img src="photo/inv_bingo.png" alt="logo de l'entreprise">
+                <p>votre partenaire immobilier de confiance à kinshasa</p>
+            </div>
+            <div class="footer-col">
+                <h3>coordonnées</h3>
+                <p> telephone : 0982113690</p>
+                <p>envoyer nous un mail : <a href="mailto:bingoImmo@gmail.com">BingoImmo@gmail.com</a></p>
+            </div>
+            <nav class="footer-col">
+                <h3>navigation</h3>
+                <ul>
+                    <li><a href="index.html">accueil</a></li>
+                    <li><a href="service.html">services</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="apropos.html">à propos de nous</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h3>services</h3>
+                <ul>
+                    <li>location</li>
+                    <li>ventes</li>
+                    <li>achat</li>
+                    <li>decoration</li>
+                    <li>gestion immobilire</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="hr">
+
+            <p>kinshasa - Rdcongo</p>
+            <p>&copy; Bingo immobilier - tous droits réservés.</p>
+        </div>
+
+    </footer>
+    <script src="traitement.js"></script>
+    <script src="modal.js"></script>
+</body>
+
+</html>

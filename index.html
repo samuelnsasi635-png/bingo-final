@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bingo - immobilier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/photo/Bingo.png">
+</head>
+
+<body>
+    <main>
+        <section class="header_accueil">
+            <!-- le menu  -->
+            <header>
+                <div class="logo-lien">
+                    <a href="index.html" class="logo">Bingo</a>
+                    <div class="menu-lien">
+                        <a href="index.html">accueil</a>
+                        <a href="service.html">services</a>
+                        <a href="contact.html">contact</a>
+                        <a href="apropos.html">a propos</a>
+                    </div>
+                </div>
+                
+                <div class="btn-lien">
+                    <a href="authentification.html">connexion</a>
+                    <a href="authentification.html" class="orange-lien">inscription</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <!-- fin du menu -->
+
+            <!-- debut des deux section 
+            l'une pour le titre communement appele hero
+            et l'autre pour la recherche -->
+        </section>
+
+        <section class="hero">
+            <h1>Bienvenue sur Bingo Immobilier</h1>
+            <p>Trouvez votre bien idéal à Kinshasa</p>
+            <div class="btype">
+                <span>appartement</span>
+                <span>villa</span>
+                <span>maison</span>
+                <span>burreau</span>
+            </div>
+            <div class="hero-link">
+                <a href="propriete.html" class="btn">voir les proprietes</a>
+                <a href="service.html" class="btn">deposer une annonce</a>
+            </div>
+        </section>
+
+        <!-- les propriete -->
+        <section class="propiete" id="pr">
+            <div class="titre-section">
+                <h2>les biens qui pourraient vous intéresser.</h2>
+            </div>
+            <div class="propriete-grid" id="propertiesGrid">
+                <!-- les biens seront affichés ici grace a javascript -->
+
+            </div>
+            <a href="propriete.html" class="btn1">Voir d'autres <strong>annonces</strong> </a>
+        </section>
+
+
+        <section class="biso" id="bs">
+            <h2>Bingo , votre partenaire de confiance a kinshasa</h2>
+            <div class="cont-biso">
+                <div class="biso-image">
+                    <img src="photo/AgentImmo.jpeg" alt="">
+                </div>
+                <div class="biso-content">
+                    <h1>A PROPOS DE NOUS</h1>
+                    <p><strong>N</strong>ous sommes une agence immobilière basée à kinshasa depuis plusieurs années ,
+                        notre mission est de vous accompagner dans vos recherche de biens immobiliers(maison ,
+                        appartement , terrain ,bureau ,vila ,etc...).Nous mettons a votre disposition notre expertise du
+                        marche local afin de faciliter l'achat , la vente, la location et la gestion de biens
+                        immobiliers .</p>
+                    <p> grace a notre expertise du marche local , nous proposons des biens soignesement selectionnes et
+                        un accompagnement personnalise <br>
+                        a chaque etape de votre projet</p>
+
+                </div>
+
+            </div>
+            <div class="biso-content2">
+                <h1>Notre equipe</h1>
+                <div class="conteneur">
+
+                    <article class="propriete-card">
+                        <img src="photo/samuel_fav1.jpg" alt="une photo d'une villa">
+                        <div class="propriete-contenu">
+                            <h3>directeur</h3>
+                            <p>Samuel N. Nsasi</p>
+                        </div>
+                    </article>
+                    <article class="propriete-card">
+                        <img src="photo/agent3.jpg" alt="une photo d'une villa">
+                        <div class="propriete-contenu">
+                            <h3>agent - immobilier</h3>
+                            <p>Hardy kasongo</p>
+                        </div>
+                    </article>
+                    <article class="propriete-card">
+                        <img src="photo/agent2.jpg" alt="une photo d'une villa">
+                        <div class="propriete-contenu">
+                            <h3>agent - immobilier</h3>
+                            <p> Don-junoir k.</p>
+                        </div>
+                    </article>
+                </div>
+                <a href="apropos.html" class="btn1">en savoir plus</a>
+            </div>
+        </section>
+        <section class="temoignage" id="tm">
+            <h1>Notre livre d'or</h1>
+            <p>ce que nos clients disent</p>
+            <div class="slider">
+                <div class="slides">
+                    <div class="card">
+                        <p> grace a votre agence, j'ai trouvé une maison à gombe en seulement deux semaines</p>
+                        <time datetime="">10/04/2026</time>
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <h4>samuel N.Nsasi</h4>
+                    </div>
+                    <div class="card">
+                        <p>j'ai trouvé des bureaux pour mon entreprise rapidement et a bon prix
+                            un grand merci
+                        </p>
+                        <time datetime="">10/04/2026</time>
+                        <div class="stars">
+                            ⭐⭐⭐⭐
+                        </div>
+                        <h4>john doe</h4>
+                    </div>
+                    <div class="card">
+                        <p>grace a Bingo j'ai trouve un excellent endroit pour mon resto, un grand merci </p>
+                        <time datetime="">12/01/2026</time>
+                        <div class="stars">
+                            ⭐⭐⭐
+                        </div>
+                        <h4>richy kasongo</h4>
+                    </div>
+                    <div class="card">
+                        <p>j'ai trouvé un excellent bureau pour mon entreprise à kalamu , merci Bingo </p>
+                        <time datetime="">7/01/2026</time>
+                        <div class="stars">
+                            ⭐⭐⭐
+                        </div>
+                        <h4>Mia K. kasongo</h4>
+                    </div>
+                    <div class="card">
+                        <p>grace a Bingo j'ai trouve un excellent endroit pour mon resto, un grand merci </p>
+                        <time datetime="">12/01/2026</time>
+                        <div class="stars">
+                            ⭐⭐⭐
+                        </div>
+                        <h4>richy kasongo</h4>
+                    </div>
+                    <div class="card">
+                        <p>j'ai trouvé un excellent bureau pour mon entreprise à kalamu , merci Bingo </p>
+                        <time datetime="">7/01/2026</time>
+                        <div class="stars">
+                            ⭐⭐⭐
+                        </div>
+                        <h4>Mia K. kasongo</h4>
+                        <div class="card">
+                        <p>j'ai trouvé des bureaux pour mon entreprise rapidement et a bon prix
+                            un grand merci
+                        </p>
+                        <time datetime="">10/04/2026</time>
+                        <div class="stars">
+                            ⭐⭐⭐⭐
+                        </div>
+                        <h4>john doe</h4>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="detailsModal">
+
+            <div class="modal-content">
+
+                <span class="close" id="closeDetails"><strong>&times;</strong></span>
+
+                <div id="detailsContent"></div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="cont">
+
+            <div class="foot-logo">
+                <img src="photo/inv_bingo.png" alt="logo de l'entreprise">
+                <p>votre partenaire immobilier de confiance à kinshasa</p>
+            </div>
+            <div class="footer-col">
+                <h3>coordonnées</h3>
+                <p> telephone : 0982113690</p>
+                <p>envoyer nous un mail : <a href="mailto:bingoImmo@gmail.com">BingoImmo@gmail.com</a></p>
+            </div>
+            <nav class="footer-col">
+                <h3>navigation</h3>
+                <ul>
+                    <li><a href="index.html">accueil</a></li>
+                    <li><a href="service.html">services</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="apropos.html">à propos de nous</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h3>services</h3>
+                <ul>
+                    <li>location</li>
+                    <li>ventes</li>
+                    <li>achat</li>
+                    <li>decoration</li>
+                    <li>gestion immobilire</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="hr">
+
+            <p>kinshasa - Rdcongo</p>
+            <p>&copy; Bingo immobilier - tous droits réservés.</p>
+        </div>
+
+    </footer>
+
+    <script src="traitement.js"></script>
+</body>
+
+
+</html>

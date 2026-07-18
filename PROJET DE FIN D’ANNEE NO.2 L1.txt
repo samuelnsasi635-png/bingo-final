@@ -1,0 +1,81 @@
+PROJET DE FIN D’ANNEE NO.2/ L1
+BINGO
+	1.DESCRIPTION :
+BINGO  Est la  plateforme en ligne de l’ agence immobilière BINGO basée a Kinshasa  qui a pour but simple satisfaire les besoins des kinois en ce qui concerne le domaine immobilier .
+Pourquoi consulter une plateforme en ligne alors que contacter un agent immobilier communément appelé commissionnaire serait nettement plus rapide ?
+•	Tout d’abord ,pour un besoin de digitalisation ,
+Au fur et a mesure que  la technologie avance  
+L’idee de digitaliser les agences immobilieres est un grand pas vers le developpement .
+
+•	Ensuite, pour economiser du temps ,
+Afin de privilegier la transparence et l’accessibilite
+Aux utilisateur bingo propose de bien et services fiable ( ici pour eviter les visite sur un  bien déjà  vendu ) une meilleure description du bien (sans exageration) 
+
+Avec bingo , vous etes accompagne pour la visite , le contrat et l’ammenagement.
+
+2.LE PLAN 
+
+ *1 type de bien , statuts du bien, la localisation(la commune vue que l'agence est a kinshasa)
+qlq bien disponible (services)leurs desciption ,
+une petite description de l’agence(a propos de nous )
+la connexion, et l’inscription
+
+accueil :
+une petite description de l’agence ,avec une belle image de fond, une posibilite de choisir :
+ le type de bien(bureau , appartement , maison , terrain , immeuble )
+le statut du bien ( a louer , a vendre ,ou du tout neuf)
+la possibilite de choisir le lieu (ici je precise dans les 24 communes de kinshasa ,les immeubles  etc… )
+de definir des options  (sur le prix , la dimension ,meublé ou pas  )
+une plage des biens disponible
+
+services : 
+
+les biens disponibles :plage complete , une page par biens, prevoir ou reserver une visite (10$) voir l’agent immobilier (noter apres le contrat )cliquer sur le biens afin que les photos s’agrandissent, des fleches ,une carte interactive et des ponts d’interets a proximites
+contrat : les documents masque pour privilegier la securite mais disponibles au rendez-vous
+
+renovation et decoration (avant et apres)
+temoignages des user apres avoirs loue ou achete un bien
+
+ a propos de nous :notre histoire nos objectif et projets , nous soutenir etc..
+
+nous contacter :
+… avec nous differentes coordonnees et profil sur les reseaux 
+
+la page pour l’inscription  et la connexion ainsi que 
+le mot de passe oublie.
+
+3 IDEE
+Je ne presenterai que  +16 biens ( )
+Pour les apparts
+Les photos des appartement du mcc ,  et ailleurs(congo et poto banini)
+Les maisons les maisons disponible a kinshasa et ailleurs faute de donnes 
+Pas de bdd juste du javascript.
+un delais pour les biens ex(expire dans qlq 7jours )
+personne interressé ; personnes ayant visité
+
+a proximite ( tout ce qui est a proximite)
+ecole , restaurent ,pharmacie,
+
+LOCALISATION 
+ici je precise que ... ! CE N'EST PAS DE MON NIVEAU 
+du coup une simple localisation avec les bien autour 
+
+if je clique sur les bouttons dans "ce que nous proposons"
+il me ramene vers les services correspondant
+
+si je suis sur la page tu la souligne constament
+
+nouveau plan :
+accueil
+services
+propriete
+nous contacter
+connexion et inscription
+
+
+
+
+
+
+
+

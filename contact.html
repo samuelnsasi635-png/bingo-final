@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bingo - immobilier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="/photo/Bingo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="header_accueil">
+            <!-- le menu  -->
+            <header>
+                <div class="logo-lien">
+                    <a href="index.html" class="logo">Bingo</a>
+                    <div class="menu-lien">
+                        <a href="index.html">accueil</a>
+                        <a href="service.html">services</a>
+                        <a href="contact.html">contact</a>
+                        <a href="apropos.html">a propos</a>
+                    </div>
+                </div>
+                <div class="btn-lien">
+                    <a href="authentification.html">connexion</a>
+                    <a href="authentification.html" class="orange-lien">inscription</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <!-- fin du menu -->
+        </section>
+        <section class="contact" id="contact">
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+                    <h2>Contactez-nous</h2>
+                    <p>
+                        Une question sur un bien immobilier ?
+                        Notre équipe BINGO est disponible pour vous accompagner.
+                    </p>
+
+                    <p><i class="fa-solid fa-location-dot"></i> Kinshasa, RDC</p>
+                    <p><i class="fa-solid fa-phone"></i> +243 982113690</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@bingo-immobilier.com</p>
+                </div>
+
+
+                <form id="contactForm">
+
+                    <div class="input-box">
+                        <input type="text" id="nom" placeholder="Nom complet">
+                    </div>
+
+
+                    <div class="input-box">
+                        <input type="email" id="email" placeholder="Adresse email">
+                    </div>
+
+
+                    <div class="input-box">
+                        <input type="tel" id="telephone" placeholder="Téléphone">
+                    </div>
+
+
+                    <!-- Nouveau : raison du contact -->
+                    <div class="input-box">
+
+                        <select id="demande">
+
+                            <option value="">
+                                Type de demande
+                            </option>
+
+                            <option value="achat">
+                                Je veux acheter un bien
+                            </option>
+
+                            <option value="location">
+                                Je veux louer un bien
+                            </option>
+
+                            <option value="vente">
+                                Je veux vendre un bien
+                            </option>
+
+                            <option value="visite">
+                                Je veux programmer une visite
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Nouvelle information immobilière -->
+                    <div class="input-box">
+
+                        <select id="commune">
+
+                            <option value="">
+                                Choisir une commune
+                            </option>
+
+                            <option>
+                                Gombe
+                            </option>
+
+                            <option>
+                                Ngaliema
+                            </option>
+
+                            <option>
+                                Limete
+                            </option>
+
+                            <option>
+                                Mont-Ngafula
+                            </option>
+
+                            <option>
+                                Kintambo
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="input-box">
+                        <input type="text" id="sujet" placeholder="Sujet">
+                    </div>
+
+
+
+                    <textarea id="message" placeholder="Décrivez votre besoin"></textarea>
+
+                    <button type="submit">
+                        Envoyer
+                    </button>
+
+                    <p id="formMessage"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+        <section class="map">
+
+            <h2>Notre localisation</h2>
+
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3978.134746459019!2d15.329530073542857!3d-4.38586199558822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMjMnMDkuMSJTIDE1wrAxOSc1NS42IkU!5e0!3m2!1sfr!2scd!4v1783975633304!5m2!1sfr!2scd"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        </section>
+    </main>
+    <footer>
+        <div class="cont">
+
+            <div class="foot-logo">
+                <img src="photo/inv_bingo.png" alt="logo de l'entreprise">
+                <p>votre partenaire immobilier de confiance à kinshasa</p>
+            </div>
+            <div class="footer-col">
+                <h3>coordonnées</h3>
+                <p> telephone : 0982113690</p>
+                <p>envoyer nous un mail : <a href="mailto:bingoImmo@gmail.com">BingoImmo@gmail.com</a></p>
+            </div>
+            <nav class="footer-col">
+                <h3>navigation</h3>
+                <ul>
+                    <li><a href="index.html">accueil</a></li>
+                    <li><a href="service.html">services</a></li>
+                    <li><a href="propriete.html">nos propriétés</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="apropos.html">à propos de nous</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h3>services</h3>
+                <ul>
+                    <li>location</li>
+                    <li>ventes</li>
+                    <li>achat</li>
+                    <li>decoration</li>
+                    <li>gestion immobilire</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="hr">
+
+            <p>kinshasa - Rdcongo</p>
+            <p>&copy; Bingo immobilier - tous droits réservés.</p>
+        </div>
+
+    </footer>
+    <script src="traitement.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
