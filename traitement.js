@@ -51,8 +51,8 @@ const allProperties = [
         bedrooms: 4,
         bathrooms: 3,
         images: ["photo/villa1_cour2.jpg",
-                "photo/villa1_cour.jpg",
-                "photo/villa1_piscine.jpg",
+            "photo/villa1_cour.jpg",
+            "photo/villa1_piscine.jpg",
         ],
         status: "À vendre",
         whatsapp: "243982113690"
@@ -70,8 +70,8 @@ const allProperties = [
         bedrooms: 0,
         bathrooms: 1,
         images: ["photo/bur1.jpg",
-                "photo/bur2.jpg",
-                "photo/bur5.jpg",
+            "photo/bur2.jpg",
+            "photo/bur5.jpg",
 
         ],
         status: "à louer",
@@ -89,12 +89,12 @@ const allProperties = [
         location: "Kalamu",
         bedrooms: 1,
         bathrooms: 2,
-        images:[ "photo/kal-salon.jpg",
-                "photo/kal-sal2.jpg",
-                "photo/kal-cham.jpg",
-                "photo/kal-cham2.jpg",
-                "photo/kal-cuisine.jpg",
-                "photo/kal-douce.jpg",
+        images: ["photo/kal-salon.jpg",
+            "photo/kal-sal2.jpg",
+            "photo/kal-cham.jpg",
+            "photo/kal-cham2.jpg",
+            "photo/kal-cuisine.jpg",
+            "photo/kal-douce.jpg",
         ],
         status: "À vendre",
         whatsapp: "243982113690"
@@ -112,11 +112,11 @@ const allProperties = [
         bedrooms: 1,
         bathrooms: 1,
         images: ["photo/salon a2.jpg",
-                "photo/chambre a2.jpg",
-                "photo/cuisine a2.jpg",
-                "photo/grenier a2.jpg",
-                "photo/salle de bain a2.jpg",
-            
+            "photo/chambre a2.jpg",
+            "photo/cuisine a2.jpg",
+            "photo/grenier a2.jpg",
+            "photo/salle de bain a2.jpg",
+
         ],
         status: "à louer",
         whatsapp: "243982113690"
@@ -133,13 +133,13 @@ const allProperties = [
         location: "Gombe",
         bedrooms: 5,
         bathrooms: 4,
-        images:[ "photo/villa2_cour.jpg",
-                "photo/villa2_arbre.jpg",
-                "photo/villa2_salon.jpg",
-                "photo/villa2_etage.jpg",
-                "photo/villa2_chambre.jpg",
-                "photo/villa2_douche.jpg",
-                "photo/villa2_balcon.jpg"
+        images: ["photo/villa2_cour.jpg",
+            "photo/villa2_arbre.jpg",
+            "photo/villa2_salon.jpg",
+            "photo/villa2_etage.jpg",
+            "photo/villa2_chambre.jpg",
+            "photo/villa2_douche.jpg",
+            "photo/villa2_balcon.jpg"
 
         ],
         status: "À vendre",
@@ -158,10 +158,10 @@ const allProperties = [
         bedrooms: 1,
         bathrooms: 1,
         images: ["photo/gom1.jpg",
-                "photo/gom2.jpg",
-                "photo/gom3.jpg",
-                "photo/gom4.jpg"
-            
+            "photo/gom2.jpg",
+            "photo/gom3.jpg",
+            "photo/gom4.jpg"
+
         ],
         status: "à louer",
         whatsapp: "243982113690"
@@ -178,7 +178,7 @@ const allProperties = [
         location: "Kinshasa",
         bedrooms: 0,
         bathrooms: 1,
-        images:[ "photo/bu4.jpg",
+        images: ["photo/bu4.jpg",
             "photo/bur3.jpg",
             "photo/bur6.jpg",
         ],
@@ -197,18 +197,18 @@ const allProperties = [
         location: "Matete",
         bedrooms: 1,
         bathrooms: 1,
-        images:[ "photo/cour_mat.jpg",
-                "photo/salon_mat.jpg",
-                "photo/couloir_mat.jpg",
-                "photo/chambre_mat.jpg",
-                "photo/chambre_mat.jpg",
-                "photo/cuisine_mat.jpg",
-                "photo/toilettte_mat.jpg",
+        images: ["photo/cour_mat.jpg",
+            "photo/salon_mat.jpg",
+            "photo/couloir_mat.jpg",
+            "photo/chambre_mat.jpg",
+            "photo/chambre_mat.jpg",
+            "photo/cuisine_mat.jpg",
+            "photo/toilettte_mat.jpg",
         ],
         status: "à louer",
         whatsapp: "243982113690"
     },
-    
+
 ];
 // FONCTION: Afficher les propriétés filtrées// 
 function displayProperties(propertiesToDisplay) {
@@ -413,8 +413,10 @@ if (form) {
 
         const nom = document.getElementById("nom").value.trim();
         const telephone = document.getElementById("telephone").value.trim();
+        const commune = document.getElementById("commune").value.trim();
         const prix = document.getElementById("prix").value;
         const description = document.getElementById("description").value.trim();
+
 
         if (nom === "") {
             alert("Veuillez entrer votre nom.");
@@ -423,6 +425,10 @@ if (form) {
 
         if (telephone === "") {
             alert("Veuillez entrer votre numéro.");
+            return;
+        }
+        if(commune === "") {
+            alert("Veuillez entrer votre commune.");
             return;
         }
 
@@ -468,4 +474,3 @@ if (menu && hamburger) {
         menu.classList.toggle("open");
     })
 };
- 
